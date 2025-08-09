@@ -25,19 +25,31 @@
     }
 }
 
+
+@media (max-width: 768px) {
+    .main {
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .75)) 0% 0%, url('/img/main_bg_700.webp') no-repeat 50%/cover fixed;
+    }
+}
+@media (max-width: 400px) {
+    .main {
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .75)) 0% 0%, url('/img/main_bg_400.webp') no-repeat 50%/cover fixed;
+    }
+}
+
+
 @media (hover: none) {
     .main {
-        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .75)) 0% 0%, url('../img/main_bg.jpg') no-repeat 50%/cover scroll;
-        height: 100svh;
+        background-attachment: scroll;
     }
     .location {
         &__img {
-            background: url('../img/location.jpg') no-repeat 50%/cover scroll;
+            background-attachment: scroll;
         }
     }
     // .restaurant {
     //     &__img {
-    //         background: url('../img/turandot.jpg') no-repeat 50%/cover scroll;
+    //         background-attachment: scroll;
     //     }
     // }
 }

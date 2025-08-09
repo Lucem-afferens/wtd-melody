@@ -29,14 +29,19 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-    <!-- Favicon  -->
-    <link rel="icon" type="image/png" href="icons/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="icons/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="icons/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-    <link rel="manifest" href="icons/favicon/site.webmanifest" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Welcome to day" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
+    <link rel="preload" as="image" href="/img/main_bg_400.webp" />
+    <link rel="preload" as="image" href="/img/main_bg_700.webp" />
+    <link rel="preload" as="image" href="/img/main_bg_1440.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="src/sass/style.scss">
     </head>
 <body>
@@ -48,16 +53,26 @@
                     Алексей & Алена | 07.07.2027 <br> <span>Мелодия нашей Любви</span> 
                 </h1>
                 <div class="main__letters">
-                    <img src="img/Group_1552.svg" alt="audio">
+                    <img src="public/img/playList_1x.webp" srcset="
+                    public/img/playList_1x.webp 1x,
+                    public/img/playList_3x.webp 2x,
+                    public/img/playList_3x.webp 3x" alt="audio" loading="eager">
                     <div class="audio-btn" id="playStopIcon">
                         <div class="audio-btn__play  " id="stop">
-                            <img src="img/stop.svg" alt="">
+                            <img src="public/img/stop_1x.webp" srcset="
+                            public/img/stop_1x.webp 1x,
+                            public/img/stop_3x.webp 2x,
+                            public/img/stop_3x.webp 3x" alt="stop" loading="eager">
                         </div>
                         <div class="audio-btn__stop btn-hidden" id="play">
-                            <img src="img/play.svg" alt="">
+                            <img src="public/img/play_1x.webp" srcset="
+                            public/img/play_1x.webp 1x,
+                            public/img/play_3x.webp 2x,
+                            public/img/play_3x.webp 3x" alt="play" loading="eager">
                         </div>
                     </div>
                 </div>
+                
                 <div class="main__date">Нажмите на плей и листайте ниже</div>
             </div>
             <div class="main__arrow">
