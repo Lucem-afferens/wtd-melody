@@ -159,8 +159,10 @@
         </div>
         <div class="path__map">
             <div class="map-container" ontouchstart="activateMap(this)" onmouseleave="deactivateMap(this)">
-              <div class="map-overlay" onclick="deactivateOverlay(this)"></div>
-              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab014247ff9e620f9af33b497963e194f012212b73163e66fec7e4a24148603f7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+              <div class="map-overlay" onclick="deactivateOverlay(this)">
+                <span class="map-overlay__text">Нажмите на карту для активации масштабирования</span>
+              </div>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad8bb2ce530411735de08984756731040fc49eb39ed39090648fb4d3790ae5092&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
             </div>
         </div>
     </section>
